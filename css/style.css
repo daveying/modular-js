@@ -1,0 +1,38 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  align-items: center;
+}
+
+.item {
+  margin: auto;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.item > h1 {
+  padding: 0px 20px;
+}
+
+#people-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#people-list > li {
+  list-style-type: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 0px 6px;
+  background-color: lightblue;
+}
+
+.name {
+  padding: 2px 40px;
+}
+
+.del {
+  cursor: pointer;
+}
