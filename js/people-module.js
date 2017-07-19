@@ -5,6 +5,7 @@ var people = {
         this.$addButton = $("#add-button");
         this.$textInput = $("#text-input");
         this.bindEvents();
+        people.render();
     },
     bindEvents: function () {
         this.$addButton.on('click', this.addPerson.bind(this));
@@ -41,4 +42,3 @@ var people = {
     }
 }
 people.init();
-people.render();
