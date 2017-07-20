@@ -22,7 +22,7 @@ var people = (function(){
         $peopleList.html(htmlStr);
     };
 
-    var addPerson = function (val) {
+    function addPerson (val) {
         var name = (typeof val === "string") ? val : $textInput.val();
         people.push(name);
         render();
