@@ -20,6 +20,7 @@ var people = (function(){
             htmlStr += `<li><span class="name">${people[i]}</span><span class="del">&times;</span></li>`
         }
         $peopleList.html(htmlStr);
+        stats.setPeople(people.length);
     };
 
     function addPerson (val) {
